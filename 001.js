@@ -1,3 +1,11 @@
+function keyup_submit(e){ 
+  var evt = window.event || e; 
+  if (evt.keyCode == 13){
+    //回车事件搜索
+    search();
+
+  }
+}
 function search() {
     if (document.getElementById("search_input").value != "") {
         window.location.href = "https://cn.bing.com/search?q=" + document.getElementById("search_input").value;
